@@ -51,14 +51,15 @@
           Mathematics in 2022, as a distinguished member of the Wu Wenjun Honors Class.</p>
 
         <p>Under the mentorship of Professors <a href="https://ins.sjtu.edu.cn/peoples/zhangyaoyu">Yaoyu Zhang</a> and
-          <a href="https://ins.sjtu.edu.cn/people/xuzhiqin/index.html">Zhi-Qin John Xu</a>, my research primarily delves
-          into the theoretical underpinnings of machine learning and deep learning. My work is driven by a deep
-          curiosity about the mathematical and foundational principles underlying modern artificial intelligence, with a
-          particular focus on understanding the complexities of deep learning models through a phenomenon-driven
-          approach. I am especially interested in developing a bottom-up theoretical understanding of deep neural
-          networks, ranging from the analysis of loss landscapes and training dynamics to implicit regularization
-          mechanisms and the theoretical understanding of large language models (LLMs).
+          <a href="https://ins.sjtu.edu.cn/people/xuzhiqin/index.html">Zhi-Qin John Xu</a>, 
+          my research primarily delves
+          into the theoretical underpinnings of machine learning and deep learning. My work is driven by a <b>deep
+          curiosity</b> about the mathematical and foundational principles underlying modern artificial intelligence, with a
+          particular focus on understanding the complexities of deep learning models through a <b>phenomenon-driven</b>
+          approach. I am especially interested in developing a bottom-up and first-principle understanding of various interesting deep learning phenomena. My research covers neural-network loss landscapes, condensation phenomena, implicit regularization, Adam dynamics, and the reasoning preferences of large language models.
         </p>
+
+        <p class="profile-note"><b>In one sentence:</b> I try to understand how data, architecture, and optimization dynamics shape what deep neural networks actually learn.</p>
 
         <h2>Research Interests</h2>
         <p>My research areas include:</p>
@@ -104,71 +105,118 @@
           <li>
             <p><b>Zhiwei Bai</b>, Tao Luo, Zhi-Qin John Xu*, Yaoyu Zhang*, "Embedding Principle in Depth for the Loss
               Landscape Analysis of Deep Neural Networks", <i>CSIAM Transactions on Applied Mathematics, 5(2):350-389,
-                2024. ISSN 2708-0579. doi: <a>https://doi.org/10.4208/csiam-am.SO-2023-0020</a></i>. [<a
-                href="pub/embedding-in-depth.pdf">pdf</a>] and on [<a href="https://arxiv.org/abs/2205.13283">arXiv</a>]
-            </p>
+                2024. ISSN 2708-0579. doi: <a
+                  href="https://doi.org/10.4208/csiam-am.SO-2023-0020">https://doi.org/10.4208/csiam-am.SO-2023-0020</a></i>.
+              [<a href="pub/embedding-in-depth.pdf">pdf</a>] and on [<a
+                href="https://arxiv.org/abs/2205.13283">arXiv</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> Adding layers does not erase a shallower neural network's critical points:
+              each can be lifted to a deeper network without changing its outputs. Theory and experiments show these
+              lifted degenerate points can shape training across depths and suggest a principled route to layer
+              pruning.</p>
           </li>
           <li>
             <p><b>Zhiwei Bai</b>, Jiajie Zhao, Yaoyu Zhang*, "Connectivity shapes implicit regularization in matrix
               factorization models for matrix completion", <i>In The Thirty-eighth Annual Conference on Neural
-                Information Processing Systems, volume 37, pages 45914–45955, 2024.</i> [<a
-                href="pub/connectivity.pdf">pdf</a>] and on [<a href="https://www.arxiv.org/abs/2405.13721">arXiv</a>]
-            </p>
-          </li>
-          <li>
-            <p><b>Zhiwei Bai#</b>, Zhangchen Zhou#, Jiajie Zhao, Xiaolong Li, Zhiyu Li, Feiyu Xiong, Hongkang Yang,
-              Yaoyu Zhang*, Zhi-Qin John Xu*, "Adaptive Preconditioners Trigger Loss Spikes in Adam",
-              <i>Forty-Third International Conference on Machine Learning</i>, 2026 [<a
-                href="pub/loss_spike.pdf">pdf</a>] and on [<a href="https://arxiv.org/pdf/2506.04805">arXiv</a>]
-            </p>
+                Information Processing Systems, volume 37, pages 45914-45955, 2024.</i> [<a
+                href="pub/connectivity.pdf">pdf</a>] and on [<a
+                href="https://www.arxiv.org/abs/2405.13721">arXiv</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> The pattern of observed entries changes which completion a matrix-factorization
+              model prefers: connected data tends to produce the lowest-rank solution, while some disconnected
+              patterns produce the minimum nuclear-norm solution. A hierarchy of invariant manifolds explains how
+              training moves through solutions of increasing rank.</p>
           </li>
           <li>
             <p><b>Zhiwei Bai#</b>, Jiajie Zhao#, Zhangchen Zhou, Zhi-Qin John Xu*, Yaoyu Zhang*, "Towards Understanding
               Adam Convergence on Highly Degenerate Polynomials", <i>Forty-Third International Conference on Machine
                 Learning</i>, 2026 [<a href="pub/Adam_Accelarate.pdf">pdf</a>] and on [<a
-                href="https://arxiv.org/pdf/2603.09581">arXiv</a>]
-            </p>
+                href="https://arxiv.org/pdf/2603.09581">arXiv</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> For highly degenerate polynomials (i.e., with vanishing curvature), Adam can converge at a linear rate under constant
+              learning rates, unlike the sub-linear rates of gradient descent and momentum.
+              Decoupling between second moments and squared gradients compensates for the vanishing curvature, while hyperparameters
+              separate stable, spiking, and oscillatory regimes.</p>
           </li>
           <li>
-            <p><b>Zhiwei Bai</b>, Xiang Cao, Songtao Mao, Han Zhang, Yuehui Zhang*, "Nilpotent Category of Abelian
-              Categories and Self-Adjoint Functors", <i>Frontiers of Mathematics 18 (6), 1363-1377</i>, 2023. [<a
-                href="pub/self-adjoint.pdf">pdf</a>] and on [<a href="https://arxiv.org/abs/2111.14656">arXiv</a>]</p>
+            <p><b>Zhiwei Bai#</b>, Zhangchen Zhou#, Jiajie Zhao, Xiaolong Li, Zhiyu Li, Feiyu Xiong, Hongkang Yang,
+              Yaoyu Zhang*, Zhi-Qin John Xu*, "Adaptive Preconditioners Trigger Loss Spikes in Adam",
+              <i>Forty-Third International Conference on Machine Learning</i>, 2026 [<a
+                href="pub/loss_spike.pdf">pdf</a>] and on [<a
+                href="https://arxiv.org/pdf/2506.04805">arXiv</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> Why do Adam runs suddenly lose stability? We show that adaptive
+              preconditioners can decay out of sync with gradients, pushing the effective curvature past the stability threshold;
+              alignment with the gradient direction then produces a spike. Experiments confirm this mechanism across
+              MLP, convolutional, and Transformer networks.</p>
           </li>
           <li>
-            <p>Jiajie Zhao, Jianxing Wang, Junjie Yang, <b>Zhiwei Bai</b>, Yaoyu Zhang*, "Gradient Flow Dynamics and
-              Implicit
-              Bias of Diagonal Linear Networks under Infinitesimal Initialization", <i>Forty-Third International
-                Conference on Machine
-                Learning</i>, 2026. [<a href="pub/deep_model.pdf">pdf</a>]</p>
-          </li>
-          <li>
-            <p>Yaoyu Zhang*, Leyang Zhang, Zhongwang Zhang, <b>Zhiwei Bai</b>, "Local Linear Recovery Guarantee of Deep
-              Neural Networks at Overparameterization", <i>Journal of Machine Learning Research 26 (69), 1-30</i>, 2025.
-              [<a href="pub/Local-Linear.pdf">pdf</a>] and on [<a href="https://arxiv.org/abs/2406.18035">arXiv</a>]</p>
+          <p>Yaoyu Zhang*, Leyang Zhang, Zhongwang Zhang, <b>Zhiwei Bai</b>, "Local Linear Recovery Guarantee of Deep
+              Neural Networks at Overparameterization", <i>Journal of Machine Learning Research 26 (69), 1-30</i>,
+              2025. [<a href="pub/Local-Linear.pdf">pdf</a>] and on [<a
+                href="https://arxiv.org/abs/2406.18035">arXiv</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> How many samples does an overparameterized network necessarily need to recover a target?
+              We introduce local linear recovery theory, a tractable best-case guarantee, and prove narrower-network targets
+              can meet it with fewer samples than a wider model's parameter count. The best-case scenario provides a theoretical
+              foundation for understanding condensation benefits in deep learning.</p>
           </li>
           <li>
             <p>Yaoyu Zhang*, Zhongwang Zhang, Leyang Zhang, <b>Zhiwei Bai</b>, Tao Luo, Zhi-Qin John Xu, "Optimistic
               Estimate Uncovers the Potential of Nonlinear Models", <i>Journal of Machine Learning</i>, 2025. [<a
-                href="pub/Optimistic.pdf">pdf</a>] and on [<a href="https://arxiv.org/abs/2307.08921">arXiv</a>]</p>
+                href="pub/Optimistic.pdf">pdf</a>] and on [<a
+                href="https://arxiv.org/abs/2307.08921">arXiv</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> How can we estimate what an overparameterized nonlinear model could fit in
+              the best case? We define an optimistic sample size tied to a target's effective model rank. Experiments
+              support two network patterns: width need not raise it, while unnecessary connections are costly.</p>
           </li>
+          <li>
+            <p>Jiajie Zhao, Jianxing Wang, Junjie Yang, <b>Zhiwei Bai</b>, Yaoyu Zhang*, "Gradient Flow Dynamics and
+              Implicit Bias of Diagonal Linear Networks under Infinitesimal Initialization", <i>Forty-Third
+                International Conference on Machine Learning</i>, 2026. [<a href="pub/deep_model.pdf">pdf</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> How does infinitesimal initialization shape learning in deep diagonal linear
+              networks? We show gradient-flow training moves through successive saddle points reproduced by a recursive
+              algorithm, selecting a solution of a modified L1 problem. Structural invariant manifolds explain this
+              incremental feature selection.</p>
+          </li>
+            
+          
           <li>
             <p>Yaoyu Zhang*, Zhongwang Zhang, Leyang Zhang, <b>Zhiwei Bai</b>, Tao Luo, Zhi-Qin John Xu, "Linear
               Stability Hypothesis and Rank Stratification for Nonlinear Models", <i>arXiv:2211.11623</i>, 2022. [<a
-                href="pub/Linear-stability.pdf">pdf</a>] and on [<a href="https://arxiv.org/abs/2211.11623">arXiv</a>]
-            </p>
+                href="pub/Linear-stability.pdf">pdf</a>] and on [<a
+                href="https://arxiv.org/abs/2211.11623">arXiv</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> Why can nonlinear models recover targets with fewer samples than parameters?
+              We define model rank as a function's effective parameter count, prove linear stability there, and
+              hypothesize training favors stable interpolations. Experiments on matrix factorization and neural
+              networks show recovery transitions near this rank.</p>
+          </li>
+          <li>
+            <p><b>Zhiwei Bai</b>, Xiang Cao, Songtao Mao, Han Zhang, Yuehui Zhang*, "Nilpotent Category of Abelian
+              Categories and Self-Adjoint Functors", <i>Frontiers of Mathematics 18 (6), 1363-1377</i>, 2023. [<a
+                href="pub/self-adjoint.pdf">pdf</a>] and on [<a
+                href="https://arxiv.org/abs/2111.14656">arXiv</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> What does a category of nilpotent operators remember, and which functors are
+              self-adjoint? We show Nil(C) is abelian when C is, and two abelian categories are equivalent exactly when
+              their nilpotent categories are. Over finite-dimensional vector spaces, self-adjoint functors are Hom or
+              Tensor.</p>
           </li>
           <li>
             <p>Jiajie Zhao, <b>Zhiwei Bai</b>, Yaoyu Zhang*, "Disentangling Sample Size and Initialization Effects on
               Perfect Generalization for Single-Neuron Targets", <i>arXiv:2405.13787</i>, 2024. [<a
-                href="pub/Single-Neuron Target.pdf">pdf</a>] and on [<a
+                href="pub/Single-Neuron%20Target.pdf">pdf</a>] and on [<a
                 href="https://arxiv.org/abs/2405.13787">arXiv</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> Can a network learn a single-neuron target from few samples? Smaller
+              initialization helps, while an initial imbalance ratio shapes the path. Below the optimistic threshold
+              recovery is impossible; at it, only exceptional initializations work, while separation can make recovery
+              possible for a positive-measure set.</p>
           </li>
           <li>
             <p>Liangkai Hang#, Junjie Yao#, <b>Zhiwei Bai</b>, Tianyi Chen, Yang Chen, Rongjie Diao, Hezhou Li, Pengxiao
               Lin, Zhiwei Wang, Cheng Xu, Zhongwang Zhang*, Zhangchen Zhou, Zhiyu Li, Zehao Lin, Kai Chen, Feiyu Xiong*,
               Yaoyu Zhang*, Weinan E*, Hongkang Yang*, Zhi-Qin John Xu*, "Scalable Complexity Control Facilitates
-              Reasoning Ability of LLMs", <i>arXiv:2505.23013</i>, 2025 [<a href="pub/complexity_control.pdf">pdf</a>]
-              and on [<a href="https://arxiv.org/pdf/2505.23013">arXiv</a>]</p>
+              Reasoning Ability of LLMs", <i>arXiv:2505.23013</i>, 2025 [<a
+                href="pub/complexity_control.pdf">pdf</a>] and on [<a
+                href="https://arxiv.org/pdf/2505.23013">arXiv</a>]</p>
+            <p class="tldr"><b>TL;DR:</b> Can lower model complexity help language models reason? Across model and
+              data scales we find controlling initialization rate and weight decay improves scaling curves and many
+              benchmark scores, especially reasoning tasks. Analyses link lower complexity to condensed, structured
+              representations; the mechanism remains partly heuristic.</p>
           </li>
         </ol>
         <p><b>Note</b>: * indicates the corresponding author; # indicates equal contribution.</p>
