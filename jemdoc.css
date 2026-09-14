@@ -223,9 +223,17 @@ ol ol ol {
 }
 
 .profile-note {
-    max-width: 760px;
+    max-width: 2060px;
     padding: 0.55em 0.8em;
     border-left: 3px solid #cd7b62;
+    background: #fafafa;
+    color: #333333;
+}
+
+.profile-note2 {
+    max-width: 2060px;
+    padding: 0.55em 0.8em;
+    border-left: 3px solid #6280cd;
     background: #fafafa;
     color: #333333;
 }
@@ -236,7 +244,7 @@ ol ol ol {
 }
 
 .tldr {
-    max-width: 880px;
+    max-width: 2060px;
     margin: 0.15em 0 0.9em 0;
     padding: 0.55em 0.8em;
     border-left: 3px solid #527bbd;
